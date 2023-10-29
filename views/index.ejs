@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href = "/icons/css/boxicons.min.css" rel="stylesheet">
 	<title>CRUD</title>
 </head>
 <body>
@@ -46,7 +47,7 @@
 	</nav>
 
 	<div class="container">
-		<a href="/create" class="btn btn-outline-primary mt-4">nuevo</a>
+		<a href="/create" class="btn btn-primary pb-1 pt-2 px-2 mt-4"><box-icon name='plus-square' size='sm' type='solid' animation='tada-hover' color='#ffffff'></box-icon></a>
 		<table class="table table-bordered table-striped text-center mt-4">
 			<thead>
 				<tr class="bg-primary text-white">
@@ -63,8 +64,8 @@
 					<td><%= user.user %></td>
 					<td><%= user.rol %></td>
 					<td>
-						<a href="/edit/<%= user.id %>" class="btn btn-outline-info">editar</a>
-						<a href="/delete" class="btn btn-outline-danger">borrar</a>
+						<a href="/edit/<%= user.id %>" class="btn btn-info pb-1 pt-2 px-2"><box-icon type='solid' name='edit' animation='fade-up-hover' color='#ffffff'></box-icon></a>
+						<a href="/delete" class="btn btn-danger pb-1 pt-2 px-2"><box-icon type='solid' name='trash' animation='flashing-hover' color='#ffffff'></box-icon></a>
 
 					</td>
 				</tr>
@@ -73,6 +74,7 @@
 		</table>
 	</div>
 
-	<script src="./js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/icons/dist/boxicons.js" type="text/javascript"></script>
 </body>
 </html>
